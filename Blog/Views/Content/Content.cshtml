@@ -1,0 +1,158 @@
+﻿
+@model List<Blog.Models.ContentModel>
+
+
+@{
+    if (Model.Count != 0)
+    {
+        ViewBag.Title = Model.FirstOrDefault().PostTitle;
+    }
+    else
+    {
+        ViewBag.Title = "Post";
+    }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+@*Post*@
+
+    <div id="main" class="alt">
+        <section id="one">
+            <div class="inner">
+                <center>
+                    <header class="major">
+                        <h1>@Model.FirstOrDefault().PostTitle</h1>
+                        <h3><strong>Author: </strong>@Model.FirstOrDefault().AuthorName</h3>
+                        <h4><strong>Date: </strong>@Model.FirstOrDefault().Published.Substring(0, 10)</h4>
+                    </header>
+                    <span class="image main">
+                        <img src="http://localhost:63777/Uploads/ContentImage/@Model.FirstOrDefault().PostImage" style="max-height:100%;max-width:90%;" />
+                    </span>
+                </center>
+                <p>
+                    @Html.Raw(Model.FirstOrDefault().PostText)
+                </p>
+                <hr />
+                @*Add comment*@
+                <form id="contactForm">
+                    <div class="row gtr-uniform">
+                        <div class="col-6 col-12-xsmall">
+                            <input type="text" name="name" id="name" value="" placeholder="Name" />
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <input type="email" name="email" id="email" value="" placeholder="Email" />
+                        </div>
+
+                        <div class="col-12">
+                            <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <ul class="actions">
+                                <li><input type="submit" value="Submit Comment" id="send" class="primary" /></li>
+                                <li><input type="reset" value="Reset" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+
+                <h4>
+                    Comments
+                </h4>
+                <div class="table-wrapper">
+                    <table align="center">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Comment</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            @if (Model.FirstOrDefault().AudienceMessage != null)
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.AudienceName</td>
+                                        <td>@item.AudienceMessage</td>
+                                        <td>@item.CommentPublished</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td>There is no comment!</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+@Scripts.Render("~/bundles/layout/js")
+
+<script>
+        function isEmail(email) {
+    console.log(email);
+    var regex = /^([a-zA-Z0-9_.+-])+\@@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    console.log(regex.test(email));
+    return regex.test(email);
+}
+$('#send').on('click', function (e) {
+    e.preventDefault();
+    var PostId = $('#PostId').val();
+    var name = $('#name').val();
+    var message = $('#message').val();
+    var email = $('#email').val();
+    if (email != "") {
+        if (isEmail(email)) {
+            $.ajax({
+                url: '@Url.Action("Content", "Content")',
+                dataType: "json",
+                type: "POST",
+                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+                data: {
+                    name: name, message: message, email: email, PostId: PostId
+                },
+                async: true,
+                processData: true, cache: false,
+                success: function (data) {
+                    swal({
+                        title: "Thank you!",
+                        text: data,
+                        icon: "success",
+                        button: "Okey"
+                    });
+                },
+                error: function (data) {
+                    swal({
+                        title: "Error!",
+                        text: data,
+                        icon: "error",
+                        button: "Okey"
+                    });
+                }
+            });
+        } else {
+            swal({
+                title: "Error!",
+                text: "Invalid E-mail Address!",
+                icon: "error",
+                button: "Okey"
+            });
+        }
+    }
+});
+
+</script>

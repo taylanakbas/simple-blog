@@ -1,0 +1,111 @@
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Admin_Panel.dll.config
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Admin_Panel.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Admin_Panel.pdb
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/csc.exe
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/csc.exe.config
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/csc.rsp
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/csi.exe
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/csi.exe.config
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/csi.rsp
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/Microsoft.Win32.Primitives.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.AppContext.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Console.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Diagnostics.Process.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.IO.Compression.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.IO.FileSystem.DriveInfo.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.IO.Pipes.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Security.AccessControl.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Security.Claims.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Security.Principal.Windows.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Threading.Thread.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.ValueTuple.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Xml.XPath.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/vbc.exe
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/vbc.exe.config
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/vbc.rsp
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/VBCSCompiler.exe
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Microsoft.Web.Infrastructure.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Helpers.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Mvc.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Razor.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Deployment.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Webpages.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Razor.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Razor.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Webpages.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Deployment.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Razor.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Helpers.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Mvc.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.csproj.CoreCompileInputs.cache
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.csproj.CopyComplete
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.pdb
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/ImageResizer.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/ImageResizer.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Antlr3.Runtime.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Newtonsoft.Json.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Optimization.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/WebGrease.dll
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Antlr3.Runtime.pdb
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/Newtonsoft.Json.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/bin/System.Web.Optimization.xml
+C:/Users/taylanakbas/Desktop/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.csprojAssemblyReference.cache
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Admin_Panel.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Admin_Panel.pdb
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Antlr3.Runtime.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/ImageResizer.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Microsoft.Web.Infrastructure.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Newtonsoft.Json.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Helpers.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Mvc.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Optimization.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Razor.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Deployment.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Webpages.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Razor.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/WebGrease.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Antlr3.Runtime.pdb
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/ImageResizer.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Newtonsoft.Json.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Optimization.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Razor.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Webpages.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Deployment.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Webpages.Razor.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Helpers.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/System.Web.Mvc.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.csprojAssemblyReference.cache
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.csproj.CoreCompileInputs.cache
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.csproj.CopyComplete
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.dll
+/Users/taylanakbas/Desktop/Section T/Lectures/3-1/Database Systems/Project/Project_Blog/Admin_Panel/obj/Debug/Admin_Panel.pdb

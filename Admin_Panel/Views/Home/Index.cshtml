@@ -1,0 +1,61 @@
+﻿@model List<Admin_Panel.Models.ContactModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center >
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10">
+                    <h1 class="page-head-line">Message Box </h1>
+                    <!--    Hover Rows  -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style=" font-weight: bold">
+                            Messages
+                        </div>
+                        <div class="row" style="margin: 0 auto" ;>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                                <th>Mail</th>
+                                                <th>Message</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>@item.Id</td>
+                                                    <td>@item.ContactName</td>
+                                                    <td>@item.ContactMail</td>
+                                                    <td>@item.ContactMessage</td>
+                                                    <td>@item.ContactDate.ToString().Substring(0, 16)</td>
+                                                    <td>
+                                                        @Html.ActionLink("Delete", "DeleteMessages", "Home", new{ Id=item.Id },
+    null)
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
+
+
+

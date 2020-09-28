@@ -1,0 +1,101 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@using Blog.Helpers
+@model List<Blog.Models.ContentModel>
+
+@{
+    if (Model.Count != 0)
+    {
+        ViewBag.Title = Model.FirstOrDefault().CategoryName;
+    }
+    else
+    {
+        ViewBag.Title = "Posts";
+    }
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int counter = 0;
+}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+@if (Model.Count != 0)
+{
+    <div class="container">
+        <div id="main" class="alt">
+            <section>
+                <div class="inner">
+                    <header class="major">
+                        <h3>
+                            @Model.FirstOrDefault().CategoryName
+                        </h3>
+                    </header>
+                    @foreach (var item in Model)
+                    {
+                        if (counter % 2 == 0)
+                        {
+                            <div class="col-lg-6">
+                                <h4>@item.PostTitle</h4>
+                                <p>
+                                    <span class="image left">
+                                        <img src="http://localhost:63777/Uploads/ContentImage/@item.PostImage" />
+                                    </span>
+                                    @Html.Raw(item.PostText.Substring(0,200)) ...
+                                </p>
+                                <p>
+
+                                    <small>
+                                        <ins>Author</ins>: @item.AuthorName @item.AuthorLname <br /> <ins>Date:</ins>: @item.Published.Substring(0, 10)
+                                    </small>
+
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="@Url.Action("Content", "Content", new { PostId = item.PostId, CategoryName = (item.CategoryName).ToLower(), PostTitle = Helper.UrlClean(item.PostTitle)}, null)" class="button small">More</a></li>
+                                </ul>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-lg-6">
+                                <h4>@item.PostTitle</h4>
+                                <p>
+                                    <span class="image right">
+                                        <img src="http://localhost:63777/Uploads/ContentImage/@item.PostImage" />
+                                    </span>
+                                    @Html.Raw(item.PostText.Substring(0, 200)) ...
+                                </p>
+                                <p>
+                                    <small>
+                                        <ins>Author</ins>: @item.AuthorName @item.AuthorLname <br /> <ins>Date:</ins>: @item.Published.Substring(0, 10)
+                                    </small>
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="@Url.Action("Content", "Content", new { PostId = item.PostId, CategoryName = (item.CategoryName).ToLower(), PostTitle = Helper.UrlClean(item.PostTitle)}, null)" class="button small">More</a></li>
+                                </ul>
+                            </div>
+                        }
+                        <hr />
+                        counter++;
+                    }
+                </div>
+            </section>
+        </div>
+    </div>
+    <hr />
+    @Html.PagedListPager((IPagedList)ViewBag.PagedLists, _pageNo => Url.Action("ContentList", "Content", new { pageNo = _pageNo, CategoryId = Model.FirstOrDefault().CategoryId }))
+}
+else
+{
+    <div class="container">
+        <div id="main" class="alt">
+            <section>
+                <div class="inner">
+                    <i class="fas fa-times fa-5x" style="padding-left:6em"></i>
+                    <hr />
+                    <h2 style="text-align:center">There is no post yet!</h2>
+                </div>
+            </section>
+        </div>
+    </div>
+}
+@Scripts.Render("~/bundles/layout/js")

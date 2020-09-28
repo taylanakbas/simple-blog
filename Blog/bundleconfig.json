@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "Content/assets/js/contact.min.min.js",
+    "inputFiles": [
+      "Content/assets/js/contact.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/assets/js/contact.min.js",
+    "inputFiles": [
+      "Content/assets/js/contact.js"
+    ]
+  }
+]

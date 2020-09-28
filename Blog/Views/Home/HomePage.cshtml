@@ -1,0 +1,203 @@
+﻿@{
+    ViewBag.Title = "Homepage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<!-- Banner -->
+<section id="banner" class="major">
+    <div class="inner">
+        <span class="image">
+            <img src="~/Content/images/home/homeBanner.jpg" alt="" />
+        </span>
+        <header class="major">
+            <h1>Somewhere In The Box</h1>
+
+        </header>
+        <div class="content">
+            <ul class="actions">
+                <li><a href="#one" class="button next scrolly">What is in the box?</a></li>
+            </ul>
+            <div class="fas fa-box-open fa-5x"></div>
+        </div>
+    </div>
+</section>
+
+<div>
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        <section id="one" class="tiles">
+            <article>
+                <span class="image">
+                    <img src="~/Content/images/home/homeMusic.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="@Url.Action("ContentList", "Content",new { CategoryId = 1, CategoryName = "Music" })" class="link">Music</a></h3>
+                    <center>
+                        <span class="fas fa-headphones-alt"></span>
+                    </center>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="~/Content/images/home/homeSport.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="@Url.Action("ContentList", "Content",new { CategoryId = 2, CategoryName = "Sport" })" class="link">Sport</a></h3>
+                    <center>
+                        <span class="fas fa-basketball-ball"></span>
+                    </center>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="~/Content/images/home/homePhotograph.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="@Url.Action("ContentList", "Content",new { CategoryId = 3, CategoryName = "Photography" })" class="link">Photography</a></h3>
+                    <center>
+                        <span class="fas fa-camera-retro"></span>
+                    </center>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="~/Content/images/home/homeTravel.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="@Url.Action("ContentList", "Content",new { CategoryId = 4, CategoryName = "Travel" })" class="link">Travel</a></h3>
+                    <center>
+                        <span class="fas fa-globe-americas"></span>
+                       
+                    </center>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="~/Content/images/home/homeTechnology.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="@Url.Action("ContentList", "Content",new { CategoryId = 5, CategoryName = "Technology" })" class="link">Technology</a></h3>
+                    <center>
+                        <span class="fas fa-robot"></span>
+                    </center>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="~/Content/images/home/homeCinema.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="@Url.Action("ContentList", "Content",new { CategoryId = 6, CategoryName = "Cinema" })" class="link">Cinema</a></h3>
+                    <center>
+                        <span class="fas fa-film"></span>
+                    </center>
+                </header>
+            </article>
+        </section>
+        <!-- Two -->
+        <section id="two">
+            <div class="inner">
+                <header class="major">
+                    <h2>All Categories</h2>
+                </header>
+                <ul class="actions">
+                    <li><a href="@Url.Action("Categories", "Category")" class="button next">Browse</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <div class="inner">
+                <center>
+                    <h3>Contact Us!</h3>
+                </center>
+
+                <div class="container-fluid">
+                    <form id="contactForm">
+                        <div class="fields">
+                            <div class="field half">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" autocomplete="off" required />
+                            </div>
+                            <div class="field half">
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email" id="email" autocomplete="off" required />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="6" autocomplete="off" required></textarea>
+                            </div>
+                        </div>
+                        <hr style="  border: 0;height: 1px;background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 128, 128), rgba(0, 0, 0, 0));" />
+                        <div>
+                            <ul class="actions">
+                                <li><input type="submit" value="Submit" class="primary" id="send" /></li>
+                                <li><input type="reset" value="Clear" /></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+@Scripts.Render("~/bundles/layout/js")
+
+<script>
+        function isEmail(email) {
+    console.log(email);
+    var regex = /^([a-zA-Z0-9_.+-])+\@@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    console.log(regex.test(email));
+    return regex.test(email);
+}
+$('#send').on('click', function (e) {
+    e.preventDefault();
+    var name = $('#name').val();
+    var message = $('#message').val();
+    var email = $('#email').val();
+    if (email != "") {
+        if (isEmail(email)) {
+            $.ajax({
+                url: '@Url.Action("Contact", "Home")',
+                dataType: "json",
+                type: "POST",
+                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+                data: { name: name, message: message, email: email },
+                async: true,
+                processData: true, cache: false,
+                success: function (data) {
+                    swal({
+                        title: "Thank you!",
+                        text: data,
+                        icon: "success",
+                        button: "Okey"
+                    });
+                },
+                error: function (data) {
+                    swal({
+                        title: "Error!",
+                        text: data,
+                        icon: "error",
+                        button: "Okey"
+                    });
+                }
+            });
+        } else {
+            swal({
+                title: "Error!",
+                text: "Invalid E-mail Address!",
+                icon: "error",
+                button: "Okey"
+            });
+        }
+    }
+});
+
+</script>

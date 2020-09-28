@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This is the sample templates definitions file. It makes the "templates"
+ * command completely customizable.
+ *
+ * See FCKConfig.TemplatesXmlPath in the configuration file.
+-->
+<Templates imagesBasePath="fck_template/images/">
+	<Template title="Mail Icerigi" image="template1.gif">
+		<Description>Urunlerin gosterilecegi template</Description>
+		<Html>
+			<![CDATA[
+				<html lang="tr">
+					<head>
+					<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+					<title>CASTROL BİLGİ</title>
+					<style type="text/css">
+					<!--
+					body,td,tr,div,span {
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 12px;
+						color: #333333;
+					}
+					a{
+						color: #990000;
+						font-weight:bold;
+					}
+					a:hover{
+						color: #FF0000;
+						font-weight:bold;
+						text-decoration:underline;
+					}
+					-->
+					</style>
+					</head>
+					<body>
+					<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="border:0px solid #DADADA;">
+					  <tr>
+						<td >
+						<div><img src="http://www.castrolen.com/images/mailFormat/castrol_banner.jpg" title="CASTROL"></div>
+						<br>
+						<table width="555" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+							  <td><p><strong>Merhaba ##isim##</strong></p>
+					<p>Castrol Erişim Noktası   sistemimizi kullandığınız i&ccedil;in teşekk&uuml;r ederiz. </p>
+					<p>Volkswagen aracınızın   motor yağı&nbsp;Castrol' &uuml;n size sağladığı bu hizmeti, bundan sonra servisinize her gelişinizde kullanabilirsiniz.</p>
+					<p>Daha detaylı bilgi i&ccedil;in <STRONG><U><a href="http://www.castrol.com.tr"><SPAN title="http://www.castrol.com.tr">l&uuml;tfen   tıklayın</SPAN></a></U></STRONG></p>
+					<p>Saygılarımızla,</p>
+					<p>Castrol<br>
+					  <A title="http://www.castrol.com.tr" href="http://www.castrol.com.tr"><SPAN title="http://www.castrol.com.tr">www.castrol.com.tr</SPAN></A></p></td>
+							</tr>
+						</table></td>
+					  </tr>
+					</table>
+					</body>
+					</html>
+			]]>
+		</Html>
+	</Template>
+	
+</Templates>

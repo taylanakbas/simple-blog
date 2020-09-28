@@ -1,0 +1,55 @@
+﻿@model List<Blog.Models.CategoryModel>
+
+@{
+    ViewBag.Title = "Categories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<!-- Banner -->
+<section id="banner" class="style2">
+    <div class="inner">
+        <span class="image">
+            <img src="~/Content/images/categories/banner.jpg" alt="" />
+        </span>
+        <header class="major">
+            <h1>Categories</h1>
+        </header>
+        <div class="content">
+            <h3>
+                Take a closer look inside the box<br />
+            </h3>
+        </div>
+    </div>
+</section>
+
+<!-- Main -->
+<div id="main">
+
+    <!-- Two -->
+    <section id="two" class="spotlights">
+        @foreach (var item in Model)
+        {
+            <section>
+                <a href="@Url.Action("ContentList","Content",new { CategoryId = item.CategoryId, CategoryName=item.CategoryName }, null)" class="image">
+                    <img src="http://localhost:63777/Uploads/CategoryImage/@item.CategoryImage" alt="" data-position="center center" />@*@CategoryImage*@
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>@item.CategoryName</h3>
+                        </header>
+                        <p>@item.CategoryDesc</p>
+                        <label class="button primary small">
+                            @Html.ActionLink("More", "ContentList", "Content", new { CategoryId = item.CategoryId, CategoryName = item.CategoryName }, null)
+                        </label>
+                    </div>
+                </div>
+            </section>
+        }
+    </section>
+</div>
+
+
+
+@Scripts.Render("~/bundles/layout/js")

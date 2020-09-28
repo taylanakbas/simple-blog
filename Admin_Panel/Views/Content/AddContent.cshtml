@@ -1,0 +1,101 @@
+﻿@model Admin_Panel.Models.ContentModel
+
+@{
+    ViewBag.Title = "AddContent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<center>
+    <div class="content-wrapper">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-head-line">Add New Post </h1>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 0 auto" ;>
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            @using (Html.BeginForm("AddContent", "Content", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                            {
+                                
+                                <label>Title</label>
+                                <input type="text" class="form-control" placeholder="Title" name="PostTitle" autocomplete="off" required />
+                                <hr />
+                                <label>Post</label>
+                                <textarea class="form-control" rows="10" placeholder="Post Text" name="PostText" autocomplete="off" required></textarea>
+                                <hr />
+                                <label>Author Id</label>
+                                <input type="text" class="form-control" placeholder="Author Id" name="AuthorId" autocomplete="off" required />
+                                <hr />
+                                <div class="form-group">
+                                    <label>Category</label>
+                                    <select class="form-control" name="CategoryId" autocomplete="off" required>
+                                        @foreach (var item in (List<Admin_Panel.Models.ContentModel>)ViewBag.Categories)
+                                        {
+                                            <option value="@item.CategoryId">@item.CategoryName</option>
+                                        }
+                                    </select>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Upload Image</label>
+                                    <input type="file" id="PostImage" name="PostImage" required />
+                                </div>
+                                <hr />
+                                <input type="submit" value="Post" />
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</center>
+
+
+@*<script src="~/Scripts/editor/fckeditor.js"></script>*@
+
+@*<script type="text/javascript" language="javascript">
+    window.onload = function () {
+        var sBasePath = '../Scripts/editor/';
+        var oFCKeditor = new FCKeditor('PostText');
+
+        oFCKeditor.BasePath = sBasePath;
+        oFCKeditor.ReplaceTextarea();
+        //oFCKeditor.resize('100%', '650', true);
+        $("PostText").css("height", "500px");
+    }
+    function initMenu() {
+        $('#side_menu ul').hide();
+        //$('#side_menu ul:eq(0)').show();//
+        $('#side_menu li a').click(
+            function () {
+                var checkElement = $(this).next();
+                $(this).attr('class', '');
+                if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                    $('#side_menu ul').slideUp('normal');
+                    $('#Accardion').attr('class', 'Sidebar');
+                    $('#side_menu ul li a').attr('class', '');
+                    $(this).find('span.arrow').attr('class', 'arrow');
+                    return false;
+                }
+                if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                    $('#Accardion').attr('class', 'Sidebar');
+                    $('#side_menu li a').attr('class', '');
+                    $('#side_menu ul li a').attr('class', 'Selected');
+                    $(this).find('span.arrow').attr('class', 'arrow open');
+                    $('#side_menu ul:visible').slideUp('normal');
+                    checkElement.slideDown('normal');
+                    $(this).attr('class', 'selected');
+                    return false;
+                }
+            }
+        );
+    }</script>*@

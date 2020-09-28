@@ -1,0 +1,54 @@
+﻿@model List<Admin_Panel.Models.CategoryModel>
+
+@{
+    ViewBag.Title = "LogCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<center>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                    <h1 class="page-head-line"> Updated Categories </h1>
+                    <!--    Hover Rows  -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style=" font-weight: bold">
+                           
+                        </div>
+                        <div class="row" style="margin: 0 auto" ;>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>#Category</th>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Update Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>@item.LogId</td>
+                                                    <td>@item.CategoryId</td>
+                                                    <td>@item.CategoryName</td>
+                                                    <td>@item.CategoryDesc</td>
+                                                    <td>@item.Updated</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>

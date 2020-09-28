@@ -1,0 +1,64 @@
+﻿@model List<Admin_Panel.Models.ContentModel>
+@{
+    ViewBag.Title = "DeleteContent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<center>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="page-head-line">İçerik </h1>
+                    <!--    Hover Rows  -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style=" font-weight: bold">
+                            İçerikler
+                        </div>
+                        <div class="row" style="margin: 0 auto" ;>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Kategori Adı</th>
+                                                <th>Başlık</th>
+                                                <th>Yazar</th>
+                                                <th>Tarih</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>@item.PostId</td>
+                                                    <td>@item.CategoryName</td>
+                                                    <td>@item.PostTitle</td>
+                                                    <td>@item.AuthorName</td>
+                                                    <td>@item.Published</td>
+                                                </tr>
+                                            }
+
+                                        </tbody>
+                                    </table>
+                                    @using (Html.BeginForm())
+                                    {
+                                        <label>İçerik Id</label>
+                                        <form>
+                                            <input type="text" class="form-control" placeholder="İçerik-Id" name="PostId" />
+                                            <hr />
+                                            <input type="submit" value="Sil" class="btn btn-default" />
+                                        </form>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+

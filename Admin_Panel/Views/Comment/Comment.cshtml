@@ -1,0 +1,64 @@
+﻿@model List<Admin_Panel.Models.CommentModel>
+
+@{
+    ViewBag.Title = "Comment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<center>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h1 class="page-head-line">Comments </h1>
+                    <!--    Hover Rows  -->
+                    <div class="panel panel-default">
+
+                        <div class="row" style="margin: 0 auto" ;>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Comment Id</th>
+                                                <th>Post Id</th>
+                                                <th>Post Title</th>
+                                                <th>Name</th>
+                                                <th>Mail</th>
+                                                <th>Message</th>
+                                                <th>Date</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>@item.CommentId</td>
+                                                    <td>@item.PostId</td>
+                                                    <td>@item.PostTitle</td>
+                                                    <td>@item.AudienceName</td>
+                                                    <td>@item.AudienceMail</td>
+                                                    <td>@item.AudienceMsg</td>
+                                                    <td>@item.CommentPublished</td>
+                                                    @*<td>
+                                                        @Html.ActionLink("Delete", "DeleteComment", "Content", new { CommentId = item.CommentId },
+    null)
+                                                    </td>*@
+
+                                                </tr>
+                                            }
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
